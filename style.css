@@ -1,0 +1,79 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the container that holds all the elements */
+.container {
+    width: 300px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* Optional: blurred background effect for more focus */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the container */
+.container:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+/* Header Style */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Styling for the buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* This will add space between the buttons */
+    font-size: 16px;
+    background-color: #000080; /* Navy blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #000066; /* Darker navy blue on hover */
+}
+
+/* Style for the output section */
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for output */
+}
+
+/* Style for error messages */
+#error {
+    color: #D32F2F;
+    font-size: 16px;
+    font-weight: bold;
+}
